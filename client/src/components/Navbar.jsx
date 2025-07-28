@@ -263,6 +263,7 @@ const Navbar = () => {
                         <div className="flex items-center space-x-4">
                             {/* CTA Button */}
                             <motion.button
+                                onClick={handleBookService}
                                 className="bg-[#00ADEE] text-white px-4 sm:px-6 py-2 rounded-full font-medium hover:bg-[#0088CC] hover:shadow-lg hover:scale-105 transition-all duration-300 text-sm sm:text-base"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
