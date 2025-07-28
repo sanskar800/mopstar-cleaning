@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaInstagram, FaBehance, FaPhone, FaEnvelope, FaMapMarkerAlt, FaBars, FaTimes } from 'react-icons/fa';
 import mopstarLogo from '../assets/images/mopstar- 1.png';
@@ -7,6 +7,11 @@ import mopstarLogo from '../assets/images/mopstar- 1.png';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const navigate = useNavigate();
+
+    const handleBookService = () => {
+        navigate('/services');
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -172,13 +177,13 @@ const Navbar = () => {
                                 className="flex items-center hover:text-blue-200 transition-colors duration-300"
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <FaPhone className="mr-1" size={10} /> (+91) 98765 4321
+                                <FaPhone className="mr-1" size={10} /> +61 414 996 797
                             </motion.span>
                             <motion.span
                                 className="flex items-center hover:text-blue-200 transition-colors duration-300"
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <FaEnvelope className="mr-1" size={10} /> support@email.com
+                                <FaEnvelope className="mr-1" size={10} /> info@mopstarcleaning.com
                             </motion.span>
                         </div>
                     </div>

@@ -29,7 +29,8 @@ const Footer = () => {
         setNewsletterLoading(true);
 
         try {
-            const response = await axios.post('http://localhost:4000/api/contact', {
+            const baseUrl = import.meta.env.VITE_CONTACT_URL || 'http://localhost:4000/api/contact';
+            const response = await axios.post(baseUrl, {
                 name: 'Newsletter Subscriber',
                 email: newsletterEmail,
                 message: 'Newsletter subscription request',
