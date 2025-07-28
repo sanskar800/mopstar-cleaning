@@ -71,7 +71,7 @@ const Home = () => {
         setContactLoading(true);
 
         try {
-            const response = await axios.post(import.meta.env.VITE_API_URL || 'http://localhost:4000/api/contact', {
+            const response = await axios.post(import.meta.env.VITE_CONTACT_URL || 'http://localhost:4000/api/contact', {
                 name: contactForm.name,
                 email: contactForm.email,
                 message: contactForm.message,

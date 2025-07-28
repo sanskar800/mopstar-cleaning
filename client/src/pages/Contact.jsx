@@ -86,10 +86,10 @@ const Contact = () => {
 
         try {
             // Use Vite environment variable with fallback
-            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:4000/api/contact';
+            const apiUrl = import.meta.env.VITE_CONTACT_URL || 'http://localhost:4000/api/contact';
 
             console.log('Environment variables:', {
-                VITE_API_URL: import.meta.env.VITE_API_URL,
+                VITE_API_URL: import.meta.env.VITE_CONTACT_URL,
                 apiUrlUsed: apiUrl
             });
             console.log('Submitting form to:', apiUrl, 'with payload:', {

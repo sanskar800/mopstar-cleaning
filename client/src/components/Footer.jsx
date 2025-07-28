@@ -229,10 +229,11 @@ const Footer = () => {
                                     {[
                                         { name: 'Office Cleaning', path: '/services/office-cleaning' },
                                         { name: 'Toilet Cleaning', path: '/services/toilet-cleaning' },
-                                        { name: 'Carpet Cleaning', path: '/services/carpet-cleaning' },
+                                        { name: 'Gym Cleaning', path: '/services/gym-cleaning' },
                                         { name: 'Window Cleaning', path: '/services/window-cleaning' },
                                         { name: 'Kitchen Cleaning', path: '/services/kitchen-cleaning' },
                                         { name: 'Marble and Tile Cleaning', path: '/services/marble-tile-cleaning' },
+                                        { name: 'End of Lease', path: '/services/end-of-lease' },
                                     ].map((item) => (
                                         <li key={item.name}>
                                             <Link to={item.path} className="hover:text-[#2F90BA] transition-all duration-300 opacity-80 hover:opacity-100">
